@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding The Numbers</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demoone"></p>
+    <p id="demotwo"></p>
+
+
+    <script>
+        function addUp(n) {
+            let sum = 0;
+            for (let i = 1; i <= n; i++) {
+            sum += i;
+        }
+        return sum;
+    }
+    var addingNo = addUp(4);
+    var AddingNo = addUp(13);
+    var AddingNum = addUp(600);
+
+    addingNo = document.getElementById("demo").innerHTML = "addUP (4) - " + addingNo;
+    AddingNo = document.getElementById("demoone").innerHTML = "addUP (13) - " + AddingNo;
+    AddingNum = document.getElementById("demotwo").innerHTML = "addUP (600) - " + AddingNum;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demoOne"></p>
+    <p id="demoTwo"></p>
+    <script>
+        function ConvertMinToSec(minutes){
+            return Math.floor(minutes*60); 
+        }
+        var mintosec =  ConvertMinToSec(5);
+        var mintosec1 = ConvertMinToSec(3);
+        var mintosec2 = ConvertMinToSec(2);
+        mintosec = document.getElementById("demo").innerHTML = " 5 minutes = " + mintosec + " Second";
+        mintosec = document.getElementById("demoOne").innerHTML = " 3 minutes = " + mintosec1 + " Second";
+        mintosec = document.getElementById("demoTwo").innerHTML = " 2 minutes = " + mintosec2 + " Second";
+        
+    </script>
+</body>
+</html>
