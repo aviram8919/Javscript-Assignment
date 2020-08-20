@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-1</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      function replaceVowel(a) {
+        var b = "";
+        var gib = ["a", "e", "i", "o", "u"];
+        for (i = 0; i < a.length; i++) {
+          if (gib.includes(a[i])) {
+            if (a[i] === "a") {
+              b += "1";
+            } else if (a[i] === "e") {
+              b += "2";
+            } else if (a[i] === "i") {
+              b += "3";
+            } else if (a[i] === "o") {
+              b += "4";
+            } else if (a[i] === "u") {
+              b += "5";
+            }
+          } else {
+            b += a[i];
+          }
+        }
+        return b;
+      }
+      var replacingVowel = replaceVowel("karachi");
+      replacingVowel = document.getElementById("demo").innerHTML =
+        " replaceVowel(karachi) => " + replacingVowel;
+    </script>
+  </body>
+</html>

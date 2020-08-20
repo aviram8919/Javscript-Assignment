@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-1</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      function specialReverse(a, x) {
+        let res = a.split(" ");
+        for (let i = 0; i < res.length; i++) {
+          if (res[i].indexOf(x) === 0) {
+            let b = res[i];
+            let c = b.split("");
+            c = c.reverse();
+            b = c.join("");
+            res[i] = b;
+          }
+        }
+        res = res.join(" ");
+        return res;
+      }
+      var Reversing = specialReverse("word searches are super fun", "s");
+      Reversing = document.getElementById("demo").innerHTML =
+        " specialReverse(word searches are super fun,s ) =>  " + Reversing;
+    </script>
+  </body>
+</html>
